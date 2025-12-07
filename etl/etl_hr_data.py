@@ -10,7 +10,7 @@ print(df.head())
 
 # Department cleaning 
 missing_dept = df[df['Department'].isna() | (df['Department'].str.strip() == "")]
-
+#hello
 # Gender cleaning 
 df['Gender'] = df['Gender'].str.lower().map({
 'm':'Male',
