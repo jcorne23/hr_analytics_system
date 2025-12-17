@@ -24,5 +24,4 @@ df["MonthlyIncome"] = df["MonthlyIncome"].replace('[\$,]', '', regex=True)
 df["MonthlyIncome"] = df['MonthlyIncome'].fillna(
     df.groupby('Department')["MonthlyIncome"].transform('mean'))
 df.to_csv("data/clean/clean.csv", index=False)
-
-
+# print a test, let's get back into this etl simple version 
